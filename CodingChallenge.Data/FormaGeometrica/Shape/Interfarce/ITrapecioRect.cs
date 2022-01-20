@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace CodingChallenge.Data.FormaGeometrica
 {
-    public interface IFiguraAltoAnchoCalculable: IFiguraAlto, IFiguraAncho, IFigura
+    interface ITrapecioRect
     {
+        decimal BaseMayor { get; }
+        decimal BaseMenor { get; }
+        decimal Altura { get; }
+        decimal Hipotenusa { get; }
     }
 }

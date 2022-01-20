@@ -97,6 +97,24 @@ namespace CodingChallenge.Data.App_GlobalResources {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Trapecio.
+        /// </summary>
+        public static string forma_trapeciorectangulo {
+            get {
+                return ResourceManager.GetString("forma_trapeciorectangulo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Trapecios.
+        /// </summary>
+        public static string forma_trapeciorectangulo_plural {
+            get {
+                return ResourceManager.GetString("forma_trapeciorectangulo_plural", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Triángulo.
         /// </summary>
         public static string forma_trianguloequilatero {

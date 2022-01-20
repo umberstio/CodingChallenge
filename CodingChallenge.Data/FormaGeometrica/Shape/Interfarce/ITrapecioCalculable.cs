@@ -6,8 +6,7 @@ using System.Threading.Tasks;
 
 namespace CodingChallenge.Data.FormaGeometrica
 {
-    public interface IFiguraAlto
+    interface ITrapecioRectCalculable: ITrapecioRect, IFigura
     {
-        decimal Alto { get; }
     }
 }

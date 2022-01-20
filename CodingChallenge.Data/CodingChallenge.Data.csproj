@@ -77,11 +77,12 @@
     <Compile Include="FormaGeometrica\Printer\TagsExtension.cs" />
     <Compile Include="FormaGeometrica\Shape\Circulo.cs" />
     <Compile Include="FormaGeometrica\Shape\Cuadrado.cs" />
-    <Compile Include="FormaGeometrica\Shape\Interfarce\IFiguraAlto.cs" />
-    <Compile Include="FormaGeometrica\Shape\Interfarce\IFiguraAltoAnchoCalculable.cs" />
+    <Compile Include="FormaGeometrica\Shape\Interfarce\ITrapecioRect.cs" />
+    <Compile Include="FormaGeometrica\Shape\Interfarce\IFigura4LadosCalculable.cs" />
     <Compile Include="FormaGeometrica\Shape\Interfarce\IFiguraAnchoCalculable.cs" />
     <Compile Include="FormaGeometrica\Shape\Interfarce\IFiguraAncho.cs" />
     <Compile Include="FormaGeometrica\Shape\Interfarce\IFigura.cs" />
+    <Compile Include="FormaGeometrica\Shape\TrapecioRectangulo.cs" />
     <Compile Include="FormaGeometrica\Shape\TrianguloEquilatero.cs" />
     <Compile Include="Classes\FormaGeometrica.cs" />
     <Compile Include="FormaGeometrica\Shape\Figura.cs" />
