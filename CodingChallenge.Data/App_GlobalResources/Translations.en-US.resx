@@ -129,6 +129,12 @@
   <data name="forma_cuadrado_plural" xml:space="preserve">
     <value>Squares</value>
   </data>
+  <data name="forma_rectangulo" xml:space="preserve">
+    <value>Rectangle</value>
+  </data>
+  <data name="forma_rectangulo_plural" xml:space="preserve">
+    <value>Rectangles</value>
+  </data>
   <data name="forma_trapeciorectangulo" xml:space="preserve">
     <value>Trapezoid</value>
   </data>

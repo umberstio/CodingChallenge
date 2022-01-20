@@ -32,6 +32,6 @@ namespace CodingChallenge.Data.FormaGeometrica
 
         public decimal CalcularArea() => (Altura) * ((BaseMayor + BaseMenor) / 2);
 
-        public decimal CalcularPerimetro() => BaseMayor + BaseMayor + BaseMenor + Hipotenusa;
+        public decimal CalcularPerimetro() => BaseMayor + BaseMenor + Altura + Hipotenusa;
     }
 }

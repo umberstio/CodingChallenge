@@ -49,6 +49,14 @@ namespace CodingChallenge.Data.Tests
         [TestCase("Trapecio", 2, FormasPrinter.Idioma.Ingles, "<h1>Shapes report</h1>2 Trapezoids | Area 40 | Perimeter 36,77 <br/>TOTAL:<br/>2 shapes Perimeter 36,77 Area 40")]
         [TestCase("Trapecio", 1, FormasPrinter.Idioma.Portugues, "<h1>Relatório de Formas</h1>1 Trapézio | Area 20 | Perimetro 18,39 <br/>TOTAL:<br/>1 formas Perimetro 18,39 Area 20")]
         [TestCase("Trapecio", 2, FormasPrinter.Idioma.Portugues, "<h1>Relatório de Formas</h1>2 Trapézios | Area 40 | Perimetro 36,77 <br/>TOTAL:<br/>2 formas Perimetro 36,77 Area 40")]
+        //Rectangulo
+        [TestCase("Rectangulo", 1, FormasPrinter.Idioma.Castellano, "<h1>Reporte de Formas</h1>1 Rectangulo | Area 15 | Perimetro 16 <br/>TOTAL:<br/>1 formas Perimetro 16 Area 15")]
+        [TestCase("Rectangulo", 2, FormasPrinter.Idioma.Castellano, "<h1>Reporte de Formas</h1>2 Rectangulos | Area 30 | Perimetro 32 <br/>TOTAL:<br/>2 formas Perimetro 32 Area 30")]
+        [TestCase("Rectangulo", 1, FormasPrinter.Idioma.Ingles, "<h1>Shapes report</h1>1 Rectangle | Area 15 | Perimeter 16 <br/>TOTAL:<br/>1 shapes Perimeter 16 Area 15")]
+        [TestCase("Rectangulo", 2, FormasPrinter.Idioma.Ingles, "<h1>Shapes report</h1>2 Rectangles | Area 30 | Perimeter 32 <br/>TOTAL:<br/>2 shapes Perimeter 32 Area 30")]
+        [TestCase("Rectangulo", 1, FormasPrinter.Idioma.Portugues, "<h1>Relatório de Formas</h1>1 Retângulo | Area 15 | Perimetro 16 <br/>TOTAL:<br/>1 formas Perimetro 16 Area 15")]
+        [TestCase("Rectangulo", 2, FormasPrinter.Idioma.Portugues, "<h1>Relatório de Formas</h1>2 Retângulos | Area 30 | Perimetro 32 <br/>TOTAL:<br/>2 formas Perimetro 32 Area 30")]
+
         public void TestResumenListaConUnTipoDeForma(string forma, int cantidad, FormasPrinter.Idioma idioma, string expected)
         {
             Dictionary<string, IFigura> figurasCreator = new Dictionary<string, IFigura>
@@ -56,7 +64,8 @@ namespace CodingChallenge.Data.Tests
                 {"cuadrado", new Cuadrado(5)},
                 {"triangulo", new TrianguloEquilatero(5)},
                 {"circulo", new Circulo(5)},
-                {"trapecio", new TrapecioRectangulo(5,3,5) }
+                {"trapecio", new TrapecioRectangulo(5,3,5) },
+                {"rectangulo", new Rectangulo(3,5)}
             };
 
             var lista = new List<IFigura>();
@@ -84,10 +93,11 @@ namespace CodingChallenge.Data.Tests
                 new TrianguloEquilatero(9),
                 new Circulo(2.75m),
                 new TrianguloEquilatero(4.2m),
-                new TrapecioRectangulo(5,3,5)
+                new TrapecioRectangulo(5,3,5),
+                new Rectangulo(3,5)
             };
-            
-            string expected = "<h1>Shapes report</h1>2 Circles | Area 13,01 | Perimeter 18,06 <br/>2 Squares | Area 29 | Perimeter 28 <br/>1 Trapezoid | Area 20 | Perimeter 18,39 <br/>3 Triangles | Area 49,64 | Perimeter 51,6 <br/>TOTAL:<br/>8 shapes Perimeter 116,05 Area 111,65";
+
+            string expected = "<h1>Shapes report</h1>2 Circles | Area 13,01 | Perimeter 18,06 <br/>2 Squares | Area 29 | Perimeter 28 <br/>1 Rectangle | Area 15 | Perimeter 16 <br/>1 Trapezoid | Area 20 | Perimeter 18,39 <br/>3 Triangles | Area 49,64 | Perimeter 51,6 <br/>TOTAL:<br/>9 shapes Perimeter 132,05 Area 126,65";
 
             Assert.AreEqual(expected, FormasPrinter.Instance.Imprimir(listaFiguras, FormasPrinter.Idioma.Ingles));
         }
