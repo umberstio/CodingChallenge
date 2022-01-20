@@ -33,11 +33,9 @@
   <ItemGroup>
     <Reference Include="Castle.Core, Version=3.3.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
       <HintPath>..\packages\Castle.Core.3.3.3\lib\net45\Castle.Core.dll</HintPath>
-      <Private>True</Private>
     </Reference>
     <Reference Include="Moq, Version=4.5.23.0, Culture=neutral, PublicKeyToken=69f491c39445e920, processorArchitecture=MSIL">
       <HintPath>..\packages\Moq.4.5.23\lib\net45\Moq.dll</HintPath>
-      <Private>True</Private>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.10.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
@@ -52,13 +50,66 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="App_GlobalResources\Translations.Designer.cs">
+      <DependentUpon>Translations.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\Translations.en-US.Designer.cs">
+      <DependentUpon>Translations.en-US.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\Translations.es-ES.Designer.cs">
+      <DependentUpon>Translations.es-ES.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\Translations.pt-PT.Designer.cs">
+      <DependentUpon>Translations.pt-PT.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="FormaGeometrica\Calculator\FigurasCalculator.cs" />
+    <Compile Include="FormaGeometrica\Calculator\IResultado.cs" />
+    <Compile Include="FormaGeometrica\Calculator\Resultado.cs" />
+    <Compile Include="FormaGeometrica\Printer\FormasPrinter.cs" />
+    <Compile Include="FormaGeometrica\Printer\TagsExtension.cs" />
+    <Compile Include="FormaGeometrica\Shape\Circulo.cs" />
+    <Compile Include="FormaGeometrica\Shape\Cuadrado.cs" />
+    <Compile Include="FormaGeometrica\Shape\Interfarce\IFiguraAlto.cs" />
+    <Compile Include="FormaGeometrica\Shape\Interfarce\IFiguraAltoAnchoCalculable.cs" />
+    <Compile Include="FormaGeometrica\Shape\Interfarce\IFiguraAnchoCalculable.cs" />
+    <Compile Include="FormaGeometrica\Shape\Interfarce\IFiguraAncho.cs" />
+    <Compile Include="FormaGeometrica\Shape\Interfarce\IFigura.cs" />
+    <Compile Include="FormaGeometrica\Shape\TrianguloEquilatero.cs" />
     <Compile Include="Classes\FormaGeometrica.cs" />
+    <Compile Include="FormaGeometrica\Shape\Figura.cs" />
+    <Compile Include="Translator\Traducible.cs" />
+    <Compile Include="Translator\Traductor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="App_GlobalResources\Translations.en-US.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Translations.en-US.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App_GlobalResources\Translations.es-ES.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Translations.es-ES.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App_GlobalResources\Translations.pt-PT.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Translations.pt-PT.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App_GlobalResources\Translations.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Translations.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
