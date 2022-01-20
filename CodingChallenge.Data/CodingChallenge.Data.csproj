@@ -87,7 +87,6 @@
     <Compile Include="FormaGeometrica\Shape\Rectangulo.cs" />
     <Compile Include="FormaGeometrica\Shape\TrapecioRectangulo.cs" />
     <Compile Include="FormaGeometrica\Shape\TrianguloEquilatero.cs" />
-    <Compile Include="Classes\FormaGeometrica.cs" />
     <Compile Include="FormaGeometrica\Shape\Figura.cs" />
     <Compile Include="Translator\Traducible.cs" />
     <Compile Include="Translator\Traductor.cs" />
