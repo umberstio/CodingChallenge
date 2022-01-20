@@ -23,7 +23,12 @@ namespace CodingChallenge.Data.FormaGeometrica.Printer
 
         public static FormasPrinter Instance
         {
-            get => instance ?? new FormasPrinter();
+            get
+            {
+                if (instance == null)
+                    instance = new FormasPrinter();
+                return instance;
+            }
         }
 
         public string Imprimir(List<IFigura> figuras, Idioma idioma)
