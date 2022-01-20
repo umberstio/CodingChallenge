@@ -13,6 +13,7 @@ namespace CodingChallenge.Data.Tests
         // NUEVOS
         [TestCase(FormasPrinter.Idioma.Castellano, "<h1>Lista vacía de formas!</h1>")]
         [TestCase(FormasPrinter.Idioma.Ingles, "<h1>Empty list of shapes!</h1>")]
+        [TestCase(FormasPrinter.Idioma.Portugues, "<h1>Lista vazia de formas!</h1>")]
         public void TestResumenListaVacia(FormasPrinter.Idioma idioma, string expected)
         {
             Assert.AreEqual(expected, FormasPrinter.Instance.Imprimir(new List<IFigura>(), idioma));
@@ -25,21 +26,29 @@ namespace CodingChallenge.Data.Tests
         [TestCase("Cuadrado", 2, FormasPrinter.Idioma.Castellano, "<h1>Reporte de Formas</h1>2 Cuadrados | Area 50 | Perimetro 40 <br/>TOTAL:<br/>2 formas Perimetro 40 Area 50")]
         [TestCase("Cuadrado", 1, FormasPrinter.Idioma.Ingles, "<h1>Shapes report</h1>1 Square | Area 25 | Perimeter 20 <br/>TOTAL:<br/>1 shapes Perimeter 20 Area 25")]
         [TestCase("Cuadrado", 2, FormasPrinter.Idioma.Ingles, "<h1>Shapes report</h1>2 Squares | Area 50 | Perimeter 40 <br/>TOTAL:<br/>2 shapes Perimeter 40 Area 50")]
+        [TestCase("Cuadrado", 1, FormasPrinter.Idioma.Portugues, "<h1>Relatório de Formas</h1>1 Quadrado | Area 25 | Perimetro 20 <br/>TOTAL:<br/>1 formas Perimetro 20 Area 25")]
+        [TestCase("Cuadrado", 2, FormasPrinter.Idioma.Portugues, "<h1>Relatório de Formas</h1>2 Quadrados | Area 50 | Perimetro 40 <br/>TOTAL:<br/>2 formas Perimetro 40 Area 50")]
         //Circulo 
         [TestCase("Circulo", 1, FormasPrinter.Idioma.Castellano, "<h1>Reporte de Formas</h1>1 Círculo | Area 19,63 | Perimetro 15,71 <br/>TOTAL:<br/>1 formas Perimetro 15,71 Area 19,63")]
         [TestCase("Circulo", 2, FormasPrinter.Idioma.Castellano, "<h1>Reporte de Formas</h1>2 Círculos | Area 39,27 | Perimetro 31,42 <br/>TOTAL:<br/>2 formas Perimetro 31,42 Area 39,27")]
         [TestCase("Circulo", 1, FormasPrinter.Idioma.Ingles, "<h1>Shapes report</h1>1 Circle | Area 19,63 | Perimeter 15,71 <br/>TOTAL:<br/>1 shapes Perimeter 15,71 Area 19,63")]
         [TestCase("Circulo", 2, FormasPrinter.Idioma.Ingles, "<h1>Shapes report</h1>2 Circles | Area 39,27 | Perimeter 31,42 <br/>TOTAL:<br/>2 shapes Perimeter 31,42 Area 39,27")]
+        [TestCase("Circulo", 1, FormasPrinter.Idioma.Portugues, "<h1>Relatório de Formas</h1>1 Círculo | Area 19,63 | Perimetro 15,71 <br/>TOTAL:<br/>1 formas Perimetro 15,71 Area 19,63")]
+        [TestCase("Circulo", 2, FormasPrinter.Idioma.Portugues, "<h1>Relatório de Formas</h1>2 Círculos | Area 39,27 | Perimetro 31,42 <br/>TOTAL:<br/>2 formas Perimetro 31,42 Area 39,27")]
         //Triangulo Equilatero
         [TestCase("Triangulo", 1, FormasPrinter.Idioma.Castellano, "<h1>Reporte de Formas</h1>1 Triángulo | Area 10,83 | Perimetro 15 <br/>TOTAL:<br/>1 formas Perimetro 15 Area 10,83")]
         [TestCase("Triangulo", 2, FormasPrinter.Idioma.Castellano, "<h1>Reporte de Formas</h1>2 Triángulos | Area 21,65 | Perimetro 30 <br/>TOTAL:<br/>2 formas Perimetro 30 Area 21,65")]
         [TestCase("Triangulo", 1, FormasPrinter.Idioma.Ingles, "<h1>Shapes report</h1>1 Triangle | Area 10,83 | Perimeter 15 <br/>TOTAL:<br/>1 shapes Perimeter 15 Area 10,83")]
         [TestCase("Triangulo", 2, FormasPrinter.Idioma.Ingles, "<h1>Shapes report</h1>2 Triangles | Area 21,65 | Perimeter 30 <br/>TOTAL:<br/>2 shapes Perimeter 30 Area 21,65")]
+        [TestCase("Triangulo", 1, FormasPrinter.Idioma.Portugues, "<h1>Relatório de Formas</h1>1 Triângulo | Area 10,83 | Perimetro 15 <br/>TOTAL:<br/>1 formas Perimetro 15 Area 10,83")]
+        [TestCase("Triangulo", 2, FormasPrinter.Idioma.Portugues, "<h1>Relatório de Formas</h1>2 Triângulos | Area 21,65 | Perimetro 30 <br/>TOTAL:<br/>2 formas Perimetro 30 Area 21,65")]
         //Trapecio Rectangulo
         [TestCase("Trapecio", 1, FormasPrinter.Idioma.Castellano, "<h1>Reporte de Formas</h1>1 Trapecio | Area 20 | Perimetro 18,39 <br/>TOTAL:<br/>1 formas Perimetro 18,39 Area 20")]
         [TestCase("Trapecio", 2, FormasPrinter.Idioma.Castellano, "<h1>Reporte de Formas</h1>2 Trapecios | Area 40 | Perimetro 36,77 <br/>TOTAL:<br/>2 formas Perimetro 36,77 Area 40")]
         [TestCase("Trapecio", 1, FormasPrinter.Idioma.Ingles, "<h1>Shapes report</h1>1 Trapezoid | Area 20 | Perimeter 18,39 <br/>TOTAL:<br/>1 shapes Perimeter 18,39 Area 20")]
         [TestCase("Trapecio", 2, FormasPrinter.Idioma.Ingles, "<h1>Shapes report</h1>2 Trapezoids | Area 40 | Perimeter 36,77 <br/>TOTAL:<br/>2 shapes Perimeter 36,77 Area 40")]
+        [TestCase("Trapecio", 1, FormasPrinter.Idioma.Portugues, "<h1>Relatório de Formas</h1>1 Trapézio | Area 20 | Perimetro 18,39 <br/>TOTAL:<br/>1 formas Perimetro 18,39 Area 20")]
+        [TestCase("Trapecio", 2, FormasPrinter.Idioma.Portugues, "<h1>Relatório de Formas</h1>2 Trapézios | Area 40 | Perimetro 36,77 <br/>TOTAL:<br/>2 formas Perimetro 36,77 Area 40")]
         public void TestResumenListaConUnTipoDeForma(string forma, int cantidad, FormasPrinter.Idioma idioma, string expected)
         {
             Dictionary<string, IFigura> figurasCreator = new Dictionary<string, IFigura>

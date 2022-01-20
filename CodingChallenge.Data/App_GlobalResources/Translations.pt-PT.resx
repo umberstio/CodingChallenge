@@ -117,7 +117,46 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="saludo_simple" xml:space="preserve">
-    <value>Olá</value>
+  <data name="forma_circulo" xml:space="preserve">
+    <value>Círculo</value>
+  </data>
+  <data name="forma_circulo_plural" xml:space="preserve">
+    <value>Círculos</value>
+  </data>
+  <data name="forma_cuadrado" xml:space="preserve">
+    <value>Quadrado</value>
+  </data>
+  <data name="forma_cuadrado_plural" xml:space="preserve">
+    <value>Quadrados</value>
+  </data>
+  <data name="forma_trapeciorectangulo" xml:space="preserve">
+    <value>Trapézio</value>
+  </data>
+  <data name="forma_trapeciorectangulo_plural" xml:space="preserve">
+    <value>Trapézios</value>
+  </data>
+  <data name="forma_trianguloequilatero" xml:space="preserve">
+    <value>Triângulo</value>
+  </data>
+  <data name="forma_trianguloequilatero_plural" xml:space="preserve">
+    <value>Triângulos</value>
+  </data>
+  <data name="lbl_formas" xml:space="preserve">
+    <value>formas</value>
+  </data>
+  <data name="lbl_totales_area" xml:space="preserve">
+    <value>Area</value>
+  </data>
+  <data name="lbl_totales_perimetro" xml:space="preserve">
+    <value>Perimetro</value>
+  </data>
+  <data name="lbl_total_general" xml:space="preserve">
+    <value>TOTAL</value>
+  </data>
+  <data name="lista_vacia_formas" xml:space="preserve">
+    <value>Lista vazia de formas!</value>
+  </data>
+  <data name="reporte_formas_titulo" xml:space="preserve">
+    <value>Relatório de Formas</value>
   </data>
 </root>

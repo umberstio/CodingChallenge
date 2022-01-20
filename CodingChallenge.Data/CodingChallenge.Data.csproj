@@ -78,7 +78,7 @@
     <Compile Include="FormaGeometrica\Shape\Circulo.cs" />
     <Compile Include="FormaGeometrica\Shape\Cuadrado.cs" />
     <Compile Include="FormaGeometrica\Shape\Interfarce\ITrapecioRect.cs" />
-    <Compile Include="FormaGeometrica\Shape\Interfarce\IFigura4LadosCalculable.cs" />
+    <Compile Include="FormaGeometrica\Shape\Interfarce\ITrapecioCalculable.cs" />
     <Compile Include="FormaGeometrica\Shape\Interfarce\IFiguraAnchoCalculable.cs" />
     <Compile Include="FormaGeometrica\Shape\Interfarce\IFiguraAncho.cs" />
     <Compile Include="FormaGeometrica\Shape\Interfarce\IFigura.cs" />
