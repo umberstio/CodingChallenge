@@ -75,18 +75,18 @@
     <Compile Include="FormaGeometrica\Calculator\Resultado.cs" />
     <Compile Include="FormaGeometrica\Printer\FormasPrinter.cs" />
     <Compile Include="FormaGeometrica\Printer\TagsExtension.cs" />
-    <Compile Include="FormaGeometrica\Shape\Circulo.cs" />
-    <Compile Include="FormaGeometrica\Shape\Cuadrado.cs" />
-    <Compile Include="FormaGeometrica\Shape\Interfarce\IFiguraAlto.cs" />
-    <Compile Include="FormaGeometrica\Shape\Interfarce\IRectangulo.cs" />
-    <Compile Include="FormaGeometrica\Shape\Interfarce\ITrapecioRect.cs" />
-    <Compile Include="FormaGeometrica\Shape\Interfarce\ITrapecioCalculable.cs" />
-    <Compile Include="FormaGeometrica\Shape\Interfarce\IFiguraAnchoCalculable.cs" />
-    <Compile Include="FormaGeometrica\Shape\Interfarce\IFiguraAncho.cs" />
-    <Compile Include="FormaGeometrica\Shape\Interfarce\IFigura.cs" />
-    <Compile Include="FormaGeometrica\Shape\Rectangulo.cs" />
-    <Compile Include="FormaGeometrica\Shape\TrapecioRectangulo.cs" />
-    <Compile Include="FormaGeometrica\Shape\TrianguloEquilatero.cs" />
+    <Compile Include="FormaGeometrica\Shape\Circulo\Circulo.cs" />
+    <Compile Include="FormaGeometrica\Shape\Circulo\Interface\ICirculoCalculable.cs" />
+    <Compile Include="FormaGeometrica\Shape\Circulo\Interface\ICirculo.cs" />
+    <Compile Include="FormaGeometrica\Shape\Cuadrilatero\Cuadrado.cs" />
+    <Compile Include="FormaGeometrica\Shape\Cuadrilatero\Interface\ICuadrilatero.cs" />
+    <Compile Include="FormaGeometrica\Shape\Cuadrilatero\Interface\ICuadrilateroCalculable.cs" />
+    <Compile Include="FormaGeometrica\Shape\IFigura.cs" />
+    <Compile Include="FormaGeometrica\Shape\Triangulo\Interface\ITriangulo.cs" />
+    <Compile Include="FormaGeometrica\Shape\Triangulo\Interface\ITrianguloCalculable.cs" />
+    <Compile Include="FormaGeometrica\Shape\Cuadrilatero\Rectangulo.cs" />
+    <Compile Include="FormaGeometrica\Shape\Cuadrilatero\TrapecioRectangulo.cs" />
+    <Compile Include="FormaGeometrica\Shape\Triangulo\TrianguloEquilatero.cs" />
     <Compile Include="Translator\Traducible.cs" />
     <Compile Include="Translator\Traductor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -112,6 +112,7 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

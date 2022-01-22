@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CodingChallenge.Data.FormaGeometrica
 {
-    interface ITrapecioRectCalculable: ITrapecioRect, IFigura
+    interface ICuadrilateroCalculable: ICuadrilatero, IFigura
     {
     }
 }

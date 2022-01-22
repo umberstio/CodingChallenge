@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace CodingChallenge.Data.FormaGeometrica
 {
-    interface ITrapecioRect
+    interface ICuadrilatero
     {
-        decimal BaseMayor { get; }
-        decimal BaseMenor { get; }
-        decimal Altura { get; }
-        decimal Hipotenusa { get; }
+        decimal Izquierda { get; }
+        decimal Derecha { get; }
+        decimal BaseSuperior { get; }
+        decimal BaseInferior { get; }
     }
 }

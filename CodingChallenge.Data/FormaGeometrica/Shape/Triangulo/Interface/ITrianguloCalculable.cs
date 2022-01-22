@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CodingChallenge.Data.FormaGeometrica.Shape.Interfarce
+namespace CodingChallenge.Data.FormaGeometrica
 {
-    interface IRectangulo: IFiguraAncho, IFiguraAlto, IFigura
+    interface ITrianguloCalculable: ITriangulo, IFigura
     {
     }
 }

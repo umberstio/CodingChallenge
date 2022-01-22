@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CodingChallenge.Data.FormaGeometrica
 {
-    public interface IFiguraAnchoCalculable: IFiguraAncho, IFigura
+    public interface ICirculoCalculable : ICirculo, IFigura
     {
     }
 }

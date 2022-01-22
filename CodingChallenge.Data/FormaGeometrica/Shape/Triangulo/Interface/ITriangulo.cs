@@ -6,8 +6,10 @@ using System.Threading.Tasks;
 
 namespace CodingChallenge.Data.FormaGeometrica
 {
-    interface IFiguraAlto
+    interface ITriangulo
     {
-        decimal Alto { get; }
+        decimal Base { get; }
+        decimal Izquierda { get; }
+        decimal Derecha { get; }
     }
 }

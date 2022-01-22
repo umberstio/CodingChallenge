@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace CodingChallenge.Data.FormaGeometrica
 {
-    public interface IFiguraAncho
+    public interface ICirculo
     {
-       decimal Ancho { get; }
+        decimal Diametro { get; }
     }
 }
